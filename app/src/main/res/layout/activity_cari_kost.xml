@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/labelCariKost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Cari Kost"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:id="@+id/linierSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/labelCariKost"
+        android:gravity="center_horizontal"
+        >
+
+    <EditText
+        android:id="@+id/tvCariKost"
+        android:layout_width="250dp"
+        android:hint="Ketik nama kost .."
+        android:layout_marginRight="10dp"
+        android:layout_height="60dp" />
+
+    <ImageButton
+        android:id="@+id/btCariKost"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_green_dark"
+        app:srcCompat="@drawable/ic_action_action_search" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linierSearch"
+        >
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDaftarInfoTerbaru"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linierSearch"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linierSearch"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:srcCompat="@drawable/ic_action_navigation_arrow_back" />
+</RelativeLayout>

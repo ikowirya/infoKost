@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Info Kost Malang</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="api_key">AIzaSyCHFWiF4eiSc3aB2dpt_eRPQ09b94sQHjQ</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="jenis_kost">
+        <item>Putri</item>
+        <item>Putra</item>
+        <item>Campur</item>
+    </string-array>
+</resources>

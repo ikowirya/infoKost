@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "46608733411",
+    "firebase_url": "https://infokost-de126.firebaseio.com",
+    "project_id": "infokost-de126",
+    "storage_bucket": "infokost-de126.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46608733411:android:4fbca2eeb1f3d768",
+        "android_client_info": {
+          "package_name": "com.example.hi.tugasakhirproyek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46608733411-a8ip6s9msjcmqu525g0fvv33gpi0ujgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hi.tugasakhirproyek",
+            "certificate_hash": "ca482d7f37e29a4482e07ed4db4ec3c6ac9fd575"
+          }
+        },
+        {
+          "client_id": "46608733411-bue7a29cf9gp6a2dllpvtvpjhqul36vg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hi.tugasakhirproyek",
+            "certificate_hash": "18582f9ec6ee94179b80030da31563d206f7087b"
+          }
+        },
+        {
+          "client_id": "46608733411-jt6l0gcv7a8trcls9lp8njssec55b0fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw-wOBm8u4Cgz_pPFhl82txejRln606Jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46608733411-jt6l0gcv7a8trcls9lp8njssec55b0fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
