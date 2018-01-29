@@ -48,7 +48,7 @@ public class CariKostActivity extends AppCompatActivity {
         rvDaftarKost.setLayoutManager(new LinearLayoutManager(this));
         rvDaftarKost.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         //Assign Activity this to progress dialog
-        progress = new ProgressDialog(this);
+        progress = new ProgressDialog(CariKostActivity.this);
         //setting up message in progress dialog
         progress.setMessage("Loading Daftar Kost");
         //Showing progress dialog.
@@ -61,8 +61,6 @@ public class CariKostActivity extends AppCompatActivity {
                 startActivity(new Intent(CariKostActivity.this, MainActivity.class));
             }
         });
-
-
 
         btCariKost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +83,7 @@ public class CariKostActivity extends AppCompatActivity {
                         (kost.class,R.layout.row_daftar_kost,DaftarKostAdapter.ViewHolder.class,firebaseSearch) {
                     @Override
                     protected void populateViewHolder(DaftarKostAdapter.ViewHolder viewHolder, kost model, int position) {
+
                         final String post_key = getRef(position).getKey();
                         kost dataKost = kostList.get(position);
                         viewHolder.tvNamaKost.setText(dataKost.getNama_kost());

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "46608733411-cqj5foepkj6r87top6jpg9f5d42k6h9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hi.tugasakhirproyek",
+            "certificate_hash": "067feaad9cd78e9344a52af641ce890d04ead93a"
+          }
+        },
+        {
           "client_id": "46608733411-a8ip6s9msjcmqu525g0fvv33gpi0ujgc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

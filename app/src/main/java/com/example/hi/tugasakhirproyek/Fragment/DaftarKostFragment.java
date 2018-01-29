@@ -74,7 +74,7 @@ public class DaftarKostFragment  extends Fragment{
                     @Override
                     protected void populateViewHolder(DaftarKostAdapter.ViewHolder viewHolder, kost model, int position) {
                         final String post_key = getRef(position).getKey();
-                        kost dataKost = kostList.get(position);
+                        final kost dataKost = kostList.get(position);
                         viewHolder.tvNamaKost.setText(dataKost.getNama_kost());
                         viewHolder.tvJenisKost.setText(dataKost.getJenis_kost());
                         viewHolder.tvDeskripsi.setText(dataKost.getDeskripsi());
@@ -93,6 +93,7 @@ public class DaftarKostFragment  extends Fragment{
 
                                 Intent deskripsiIntent = new Intent(getContext(), DetailDaftarKostActivity.class);
                                 deskripsiIntent.putExtra("kos_id",post_key);
+                                deskripsiIntent.putExtra("nama", dataKost.getNama_kost());
                                 startActivity(deskripsiIntent);
 
                             }

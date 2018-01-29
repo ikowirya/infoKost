@@ -8,6 +8,10 @@
             android:icon="@android:drawable/ic_menu_search"
             android:title="Daftar Kost Malang" />
         <item
+            android:id="@+id/nav_pemesanan"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Daftar Pemesanan" />
+        <item
             android:id="@+id/nav_map"
             android:icon="@android:drawable/ic_dialog_map"
             android:title="Maps" />

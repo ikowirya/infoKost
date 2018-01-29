@@ -221,14 +221,37 @@
                 android:layout_height="300dp">
 
             </FrameLayout>
+
+            <Button
+                android:id="@+id/btPemesanan"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking"
+                />
+
+            <Button
+                android:id="@+id/btUpdateStok"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content"
+                android:text="Update Stok"
+                />
+
             <Button
                 android:id="@+id/btHapus"
                 android:background="@android:color/holo_red_dark"
                 android:textColor="@android:color/white"
+                android:layout_marginTop="3dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hapus"
                 />
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

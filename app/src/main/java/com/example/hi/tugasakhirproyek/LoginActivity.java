@@ -1,7 +1,9 @@
 package com.example.hi.tugasakhirproyek;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -61,7 +63,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         textViewSignUp.setOnClickListener(this);
     }
     private void userLogin(){
-        String email = editTextEmail.getText().toString().trim();
+        final String email = editTextEmail.getText().toString().trim();
         String password  = editTextPassword.getText().toString().trim();
 
 
@@ -90,7 +92,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         progressDialog.dismiss();
                         //if the task is successfull
                         if(task.isSuccessful()){
-                            //start the profile activity
+                            SharedPreferences prefs = getSharedPreferences("YOUR_PREF_NAME", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = prefs.edit();
+                            editor.putString("email", email);     //RESET TO DEFAULT VALUE
+                            editor.commit();
                             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                             finish();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));

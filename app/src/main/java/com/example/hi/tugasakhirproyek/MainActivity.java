@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import com.example.hi.tugasakhirproyek.Fragment.DaftarKostFragment;
 import com.example.hi.tugasakhirproyek.Fragment.InfoTerbaruFragment;
 import com.example.hi.tugasakhirproyek.Fragment.MapsFragment;
+import com.example.hi.tugasakhirproyek.Fragment.PemesananFragment;
 import com.example.hi.tugasakhirproyek.Fragment.SortingFragment;
 import com.example.hi.tugasakhirproyek.Fragment.TambahPropertiFragment;
 import com.google.firebase.auth.FirebaseAuth;
@@ -126,6 +127,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_kost) {
             fragment = new DaftarKostFragment();
+        } else if (id == R.id.nav_pemesanan) {
+            fragment = new PemesananFragment();
         } else if (id == R.id.nav_map) {
             fragment = new MapsFragment();
         } else if (id == R.id.nav_info) {
