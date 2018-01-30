@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/labelCariKost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubah"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:hint="Stok Kamar"
+                android:id="@+id/txtStokKamarUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelCariKost" />
+
+            <Button
+                android:id="@+id/btSubmitUpdate"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="Perbarui Stok Kamar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@+id/txtStokKamarUpdate" />
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="?attr/colorButtonNormal"
+            app:srcCompat="@drawable/ic_action_navigation_arrow_back" />
+</RelativeLayout>

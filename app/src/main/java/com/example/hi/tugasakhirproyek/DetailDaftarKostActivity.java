@@ -1,6 +1,7 @@
 package com.example.hi.tugasakhirproyek;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -45,6 +46,7 @@ public class DetailDaftarKostActivity extends AppCompatActivity {
 
         final Toolbar toolbar = (Toolbar)findViewById(R.id.MyToolbar);
         btHapus = (Button) findViewById(R.id.btHapus);
+        btUpdateStok = (Button) findViewById(R.id.btUpdateStok);
         btPemesanan = (Button)findViewById(R.id.btPemesanan);
 //        btUpdateStok = (Button)findViewById(R.id.btUpdateStok);
         mAuth = FirebaseAuth.getInstance();
@@ -104,7 +106,19 @@ public class DetailDaftarKostActivity extends AppCompatActivity {
                 tvBiayaSewa.setText("Rp " + String.valueOf(post_tvBiayaSewa));
 
                 Picasso.with(DetailDaftarKostActivity.this).load(post_imageView).into(imageView);
-
+                int stokKamar = post_tvStokKamar;
+                if (stokKamar <= 0){
+                    btPemesanan.setVisibility(View.GONE);
+                }
+                btUpdateStok.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mPost_Key = getIntent().getExtras().getString("kos_id");
+                        Intent updateIntent = new Intent(DetailDaftarKostActivity.this, UpdateKostActivity.class);
+                        updateIntent.putExtra("detail_id", mPost_Key);
+                        startActivity(updateIntent);
+                    }
+                });
             }
 
             @Override

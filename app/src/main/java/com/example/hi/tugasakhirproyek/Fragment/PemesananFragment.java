@@ -4,6 +4,7 @@ package com.example.hi.tugasakhirproyek.Fragment;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -92,6 +93,10 @@ public class PemesananFragment extends Fragment {
                                         dataPemesanan.getId_kost(), dataPemesanan.getNama_kost(), "DITERIMA");
                                 Toast.makeText(getActivity(),"Konfirmasi Berhasil",Toast.LENGTH_SHORT).show();
                                 viewHolder.btKonfirmasi.setVisibility(View.GONE);
+                                Fragment fragment = new PemesananFragment();
+                                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                                fragmentTransaction.replace(R.id.screen_area,fragment);
+                                fragmentTransaction.commit();
                             }
                         });
 
