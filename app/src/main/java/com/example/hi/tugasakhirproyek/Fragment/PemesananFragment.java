@@ -11,8 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.hi.tugasakhirproyek.Adapter.PemesananAdapter;
+import com.example.hi.tugasakhirproyek.DetailDaftarKostActivity;
 import com.example.hi.tugasakhirproyek.Model.pemesanan;
 import com.example.hi.tugasakhirproyek.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -88,6 +90,7 @@ public class PemesananFragment extends Fragment {
                             public void onClick(View view) {
                                 reservasi(dataPemesanan.getId_pemesan(), dataPemesanan.getEmail(),
                                         dataPemesanan.getId_kost(), dataPemesanan.getNama_kost(), "DITERIMA");
+                                Toast.makeText(getActivity(),"Konfirmasi Berhasil",Toast.LENGTH_SHORT).show();
                                 viewHolder.btKonfirmasi.setVisibility(View.GONE);
                             }
                         });

@@ -229,18 +229,18 @@
                 android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Booking"
+                android:text="Pesan Kost"
                 />
 
-            <Button
-                android:id="@+id/btUpdateStok"
-                android:layout_width="match_parent"
-                android:background="@android:color/holo_orange_dark"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="3dp"
-                android:layout_height="wrap_content"
-                android:text="Update Stok"
-                />
+            <!--<Button-->
+                <!--android:id="@+id/btUpdateStok"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="@android:color/holo_orange_dark"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Perbarui Stok Kamar"-->
+                <!--/>-->
 
             <Button
                 android:id="@+id/btHapus"

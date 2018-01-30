@@ -46,7 +46,7 @@ public class DetailDaftarKostActivity extends AppCompatActivity {
         final Toolbar toolbar = (Toolbar)findViewById(R.id.MyToolbar);
         btHapus = (Button) findViewById(R.id.btHapus);
         btPemesanan = (Button)findViewById(R.id.btPemesanan);
-        btUpdateStok = (Button)findViewById(R.id.btUpdateStok);
+//        btUpdateStok = (Button)findViewById(R.id.btUpdateStok);
         mAuth = FirebaseAuth.getInstance();
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -132,7 +132,7 @@ public class DetailDaftarKostActivity extends AppCompatActivity {
 
 
                             ubahstok(k.getId_kost(), k.getNama_kost(), k.getJenis_kost(), k.getNotelp_pemilik(), k.getDeskripsi(), k.getLuas_kamar(), k.getAlamat_kost(), k.getFoto(), jumlahAkhir, k.getBiaya_sewa(), k.getLatitude(), k.getLongitude());
-                            Toast.makeText(DetailDaftarKostActivity.this,"Booking Sukses",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(DetailDaftarKostActivity.this,"Pesan Kost Sukses",Toast.LENGTH_SHORT).show();
                         }
                     }
 
